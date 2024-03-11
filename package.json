@@ -1,4 +1,5 @@
 {
+  "homepage": "https://minamirmohammadi.github.io/test-react/",
   "name": "contact-manager-app",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +12,7 @@
     "concurrently": "^8.2.2",
     "font-awesome": "^4.7.0",
     "formik": "^2.2.9",
+    "gh-pages": "^6.1.1",
     "react": "^18.1.0",
     "react-confirm-alert": "^3.0.2",
     "react-dom": "^18.1.0",
@@ -22,6 +24,8 @@
     "yup": "^0.32.11"
   },
   "scripts": {
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "start": "concurrently \"react-scripts start\" \"cd server && npm start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
